@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>MessageBox</title>
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+        {% endfor %}
+
+    <h2>Register</h2>
+    <form action="" method="post">
+    <label for="name">Username:</label>
+    <br>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="passward">Passward:</label>
+    <br>
+    <input type="password" name="passward" id="passward">
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" name="email" id="email">
+    <br>
+    <input type="submit" value="Join">
+    </form>
+</body>
+</html>
